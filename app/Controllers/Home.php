@@ -6,13 +6,13 @@ use App\Models\HotelModel;
 use App\Models\BookingModel;
 use App\Models\ImageModel;
 
-class Admin extends Controller
+class Home extends Controller
 {
     public function index()
     {
         $model = new UserModel;
         $data['user'] = $model->get('user');
-        echo view('admin/customer/index', $data);
+        echo view('home/index', $data);
     }
 
     public function admin()

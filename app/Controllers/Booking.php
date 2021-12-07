@@ -56,38 +56,72 @@ class Booking extends Controller
 
     public function edit($id)
     {
-        $model = new HotelModel;
+        $model = new BookingModel;
+        $model2 = new HotelModel;
+        $model3 = new UserModel;
         $get = $model->get($id)->getRow();
         if(isset($get)){
-            $data['item'] = $get;
-            echo view('admin/hotel/edit', $data);
+            $data['book'] = $get;
+            // print_r($data['book']->item_id);
+            $data['hotel'] = $model2->get($data['book']->item_id);
+            $data['hotels'] = $model2->get();
+            $data['user'] = $model3->get('user');
+            $data['users'] = $model3->get('user');
+            echo view('admin/booking/edit', $data);
         }else{
             echo '<script>
                     alert("ID '.$id.' Tidak ditemukan");
-                    window.location="'.base_url('admin/hotel').'"
+                    window.location="'.base_url('admin/booking').'"
                 </script>';
         }
     }
 
     public function editProcess()
     {
-        $model = new HotelModel;
+        $model = new BookingModel;
+        $model2 = new HotelModel;
         $id = $this->request->getPost('id');
+        $data['hotel'] = $model2->get($this->request->getPost('item_id'));
+
+        $dateStart = strtotime($this->request->getPost('booking_date_start'));
+        $dateEnd = strtotime($this->request->getPost('booking_date_end'));
+        $dateCalculate = $dateEnd - $dateStart;
+
+        $dateTotal = floor($dateCalculate/(60*60*24));
+        if($dateTotal == 0){
+            $dateTotal = 1;
+        }
+        $totalPrice = $dateTotal * $data['hotel'][0]['item_price'];
+
+        if ($this->request->getMethod() !== 'post') {
+            return redirect()->to('admin/booking');
+        }
+        $upload = $this->request->getFile('booking_proof_of_payment');
+        $upload->move(WRITEPATH . '../public/assets/images/proof');
         $data = array(
-            'item_name' => $this->request->getPost('item_name'),
-            'item_type'         => $this->request->getPost('item_type'),
-            'item_city'  => $this->request->getPost('item_city'),
-            'item_address'         => $this->request->getPost('item_address'),
-            'item_price'  => $this->request->getPost('item_price'),
-            'item_desc'  => $this->request->getPost('item_desc'),
-            'item_facility'  => $this->request->getPost('item_facility'),
+            'item_id' => $this->request->getPost('item_id'),
+            'user_id'         => $this->request->getPost('user_id'),
+            'booking_price'  => $totalPrice,
+            'booking_date_start'         => $this->request->getPost('booking_date_start'),
+            'booking_date_end'  => $this->request->getPost('booking_date_end'),
+            'booking_proof_of_payment'  => $upload->getName(),
+            'booking_status'  => 'pending',
         );
         $model->edit($data, $id);
 
-        echo '<script>
-            alert("Berhasil mengubah data");
-            window.location="'.base_url('admin/hotel').'"
-            </script>';
+        if($model->edit($data, $id)){
+            echo '<script>
+                    alert("Data berhasil di ubah");
+                    window.location="'.base_url('admin/booking').'"
+                </script>';
+        }else{
+            echo '<script>
+                    alert("Edit Gagal !");
+                    window.location="'.base_url('admin/booking').'"
+                </script>';
+        }
+
+        // return redirect()->to('/admin/booking');
     }
 
     public function deleteData($id)
@@ -104,6 +138,72 @@ class Booking extends Controller
         }else{
             echo '<script>
                     alert("Hapus Gagal !, ID '.$id.' Tidak ditemukan");
+                    window.location="'.base_url('admin/booking').'"
+                </script>';
+        }
+    }
+
+    public function editStatusP($id, $id2)
+    {
+        $model = new BookingModel;
+        $data = array(
+            'booking_status' => 'pending',
+            'admin_id' => $id2,
+        );
+        $model->edit($data, $id);
+
+        if($model->edit($data, $id)){
+            echo '<script>
+                    alert("Berhasil mengubah status");
+                    window.location="'.base_url('admin/booking').'"
+                </script>';
+        } else{
+            echo '<script>
+                    alert("ID '.$id.' Tidak ditemukan");
+                    window.location="'.base_url('admin/booking').'"
+                </script>';
+        }
+    }
+
+    public function editStatusO($id, $id2)
+    {
+        $model = new BookingModel;
+        $data = array(
+            'booking_status' => 'ongoing',
+            'admin_id' => $id2,
+        );
+        $model->edit($data, $id);
+
+        if($model->edit($data, $id)){
+            echo '<script>
+                    alert("Berhasil mengubah status");
+                    window.location="'.base_url('admin/booking').'"
+                </script>';
+        } else{
+            echo '<script>
+                    alert("ID '.$id.' Tidak ditemukan");
+                    window.location="'.base_url('admin/booking').'"
+                </script>';
+        }
+    }
+    
+    public function editStatusD($id, $id2)
+    {
+        $model = new BookingModel;
+        $data = array(
+            'booking_status' => 'done',
+            'admin_id' => $id2,
+        );
+        $model->edit($data, $id);
+
+        if($model->edit($data, $id)){
+            echo '<script>
+                    alert("Berhasil mengubah status");
+                    window.location="'.base_url('admin/booking').'"
+                </script>';
+        } else{
+            echo '<script>
+                    alert("ID '.$id.' Tidak ditemukan");
                     window.location="'.base_url('admin/booking').'"
                 </script>';
         }

@@ -31,41 +31,49 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 // $routes->get('/', 'Admin::index');
-$routes->get('/admin', 'Admin::index');
-
-// Customer
-$routes->get('/admin/customer/add', 'User::add/user');
-$routes->add('/admin/customer/addProcess', 'User::addProcess/user');
-$routes->get('/admin/customer/edit/(:num)', 'User::edit/$1/user');
-$routes->add('/admin/customer/editProcess', 'User::editProcess/user');
-$routes->get('/admin/customer/delete/(:num)', 'User::deleteData/$1/user');
-
-// Admin
-$routes->get('/admin/admin/add', 'User::add/admin');
-$routes->add('/admin/admin/addProcess', 'User::addProcess/admin');
-$routes->get('/admin/admin/edit/(:num)', 'User::edit/$1/admin');
-$routes->add('/admin/admin/editProcess', 'User::editProcess/admin');
-$routes->get('/admin/admin/delete/(:num)', 'User::deleteData/$1/admin');
-
-// Hotel
-$routes->get('/admin/hotel/add', 'Hotel::add');
-$routes->add('/admin/hotel/addProcess', 'Hotel::addProcess');
-$routes->get('/admin/hotel/edit/(:num)', 'Hotel::edit/$1');
-$routes->add('/admin/hotel/editProcess', 'Hotel::editProcess');
-$routes->get('/admin/hotel/delete/(:num)', 'Hotel::deleteData/$1');
-
-// Hotel Image
-$routes->get('/admin/image/(:num)', 'Admin::image/$1');
-$routes->get('/admin/image/add/(:num)', 'Image::add/$1');
-$routes->add('/admin/image/addProcess', 'Image::addProcess');
-$routes->get('/admin/image/delete/(:num)', 'Image::deleteData/$1');
-
-// Booking
-$routes->get('/admin/booking/add', 'Booking::add');
-$routes->add('/admin/booking/addProcess', 'Booking::addProcess');
-$routes->get('/admin/hotel/edit/(:num)', 'Hotel::edit/$1');
-$routes->add('/admin/hotel/editProcess', 'Hotel::editProcess');
-$routes->get('/admin/booking/delete/(:num)', 'Booking::deleteData/$1');
+// $routes->get('/admin', 'Admin::index');
+$routes->group('/', function ($routes) {
+	// $routes->get('customer/add', 'User::add/user');
+});
+$routes->group('admin', function ($routes) {
+	// Customer
+	$routes->get('customer/add', 'User::add/user');
+	$routes->add('customer/addProcess', 'User::addProcess/user');
+	$routes->get('customer/edit/(:num)', 'User::edit/$1/user');
+	$routes->add('customer/editProcess', 'User::editProcess/user');
+	$routes->get('customer/delete/(:num)', 'User::deleteData/$1/user');
+	
+	// Admin
+	$routes->get('admin/add', 'User::add/admin');
+	$routes->add('admin/addProcess', 'User::addProcess/admin');
+	$routes->get('admin/edit/(:num)', 'User::edit/$1/admin');
+	$routes->add('admin/editProcess', 'User::editProcess/admin');
+	$routes->get('admin/delete/(:num)', 'User::deleteData/$1/admin');
+	
+	// Hotel
+	$routes->get('hotel/add', 'Hotel::add');
+	$routes->add('hotel/addProcess', 'Hotel::addProcess');
+	$routes->get('hotel/edit/(:num)', 'Hotel::edit/$1');
+	$routes->add('hotel/editProcess', 'Hotel::editProcess');
+	$routes->get('hotel/delete/(:num)', 'Hotel::deleteData/$1');
+	
+	// Hotel Image
+	$routes->get('image/(:num)', 'Admin::image/$1');
+	$routes->get('image/add/(:num)', 'Image::add/$1');
+	$routes->add('image/addProcess', 'Image::addProcess');
+	$routes->get('image/delete/(:num)', 'Image::deleteData/$1');
+	
+	// Booking
+	$routes->get('booking/add', 'Booking::add');
+	$routes->add('booking/addProcess', 'Booking::addProcess');
+	$routes->get('booking/edit/(:num)', 'Booking::edit/$1');
+	$routes->add('booking/editProcess', 'Booking::editProcess');
+	$routes->get('booking/delete/(:num)', 'Booking::deleteData/$1');
+	$routes->add('booking/(:num)/(:num)/pending', 'Booking::editStatusP/$1/$2');
+	$routes->add('booking/(:num)/(:num)/ongoing', 'Booking::editStatusO/$1/$2');
+	$routes->add('booking/(:num)/(:num)/done', 'Booking::editStatusD/$1/$2');
+	
+});
 
 
 /**

@@ -1089,3 +1089,261 @@ CRITICAL - 2021-12-05 07:42:20 --> Unknown column 'item.item_id' in 'where claus
 #9 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #10 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
 #11 {main}
+CRITICAL - 2021-12-05 07:49:02 --> Call to a member function getRow() on array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('7')
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-05 08:05:09 --> Call to a member function getRow() on array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-05 08:05:32 --> Undefined variable: hotel
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Views\admin\booking\edit.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 33, Array)
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(63): view('admin/booking/e...', Array)
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-05 08:06:53 --> Undefined variable: h
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Views\admin\booking\edit.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 33, Array)
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(67): view('admin/booking/e...', Array)
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-05 08:07:55 --> Cannot use object of type stdClass as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(67): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 08:08:30 --> Cannot use object of type stdClass as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(67): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 08:11:54 --> Undefined index: item_name
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Views\admin\booking\edit.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 33, Array)
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-05 08:12:22 --> Cannot use object of type mysqli as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 08:13:14 --> Cannot use object of type mysqli as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 08:13:41 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 10:22:54 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 10:22:56 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('8')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 10:23:30 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('2')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 10:23:59 --> Cannot use object of type stdClass as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('2')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 10:24:52 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('2')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 10:25:07 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$name
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Views\admin\booking\edit.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 43, Array)
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('2')
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-05 10:25:15 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('2')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 10:26:34 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('2')
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-12-05 10:27:34 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$email
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Views\admin\booking\edit.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 43, Array)
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('2')
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-05 20:42:17 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$email
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Views\admin\booking\edit.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 43, Array)
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('7')
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-05 20:43:33 --> Too few arguments to function App\Models\UserModel::get(), 0 passed in D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Models\UserModel.php on line 15 and at least 1 expected
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Models\UserModel.php(15): App\Models\UserModel->get()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(68): App\Models\UserModel->get('user', '1')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('7')
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-05 20:45:49 --> Too few arguments to function App\Models\UserModel::get(), 0 passed in D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Models\UserModel.php on line 15 and at least 1 expected
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Models\UserModel.php(15): App\Models\UserModel->get()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(68): App\Models\UserModel->get('user', '1')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('7')
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-05 20:47:47 --> Undefined offset: 0
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Views\admin\booking\edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 41, Array)
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('7')
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-05 20:53:30 --> Undefined offset: 0
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Views\admin\booking\edit.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'D:\\xampp\\htdocs...', 41, Array)
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\View\View.php(236): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Common.php(1071): CodeIgniter\View\View->render('admin/booking/e...', Array, true)
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(70): view('admin/booking/e...', Array)
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('7')
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-05 21:45:32 --> Too few arguments to function App\Models\UserModel::get(), 0 passed in D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Models\UserModel.php on line 15 and at least 1 expected
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Models\UserModel.php(15): App\Models\UserModel->get()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(68): App\Models\UserModel->get('user', '2')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('7')
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-05 21:45:58 --> Too few arguments to function App\Models\UserModel::get(), 0 passed in D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Models\UserModel.php on line 15 and at least 1 expected
+#0 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Models\UserModel.php(15): App\Models\UserModel->get()
+#1 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\app\Controllers\Booking.php(68): App\Models\UserModel->get('user', '2')
+#2 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Booking->edit('7')
+#3 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Booking))
+#4 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\freelance\Rayhan\CI4-Hotel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('D:\\xampp\\htdocs...')
+#7 {main}

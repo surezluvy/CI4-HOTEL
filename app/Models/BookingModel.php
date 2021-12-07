@@ -27,6 +27,13 @@ class BookingModel extends Model
         return $builder->insert($data);
     }
 
+    public function edit($data, $id)
+    {
+        $builder = $this->db->table($this->table);
+        $builder->where('booking_id', $id);
+        return $builder->update($data);
+    }
+
     public function deleteData($id)
     {
         $builder = $this->db->table($this->table);

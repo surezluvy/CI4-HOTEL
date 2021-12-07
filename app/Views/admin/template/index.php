@@ -116,12 +116,6 @@
                             <span class="menu-text">Booking</span>
                         </a>
                     </div>
-                    <div class="menu-item">
-                        <a href="<?= base_url('admin/confirmation') ?>" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-grid-3x3"></i></span>
-                            <span class="menu-text">Confirmation</span>
-                        </a>
-                    </div>
                 </div>
             </div>
 

@@ -60,10 +60,17 @@ class Hotel extends Controller
         );
         $model->edit($data, $id);
 
-        echo '<script>
-            alert("Berhasil mengubah data");
-            window.location="'.base_url('admin/hotel').'"
-            </script>';
+        if($model->edit($data, $id)){
+            echo '<script>
+                    alert("Data berhasil di ubah");
+                    window.location="'.base_url('admin/hotel').'"
+                </script>';
+        }else{
+            echo '<script>
+                    alert("Edit Gagal !");
+                    window.location="'.base_url('admin/hotel').'"
+                </script>';
+        }
     }
 
     public function deleteData($id)

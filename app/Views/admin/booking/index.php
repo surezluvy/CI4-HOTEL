@@ -50,8 +50,22 @@
                                                 <td><?= $u['item_type'] ?></td>
                                                 <td>Rp. <?= $u['booking_price'] ?></td>
                                                 <td><?= $u['booking_date_start'] ?> - <?= $u['booking_date_start'] ?></td>
-                                                <td><?= $u['booking_proof_of_payment'] ?></td>
-                                                <td><?= $u['booking_status'] ?></td>
+                                                <td><img src="<?= base_url('assets/images/proof/'.$u['booking_proof_of_payment']) ?>" alt="<?= $u['booking_proof_of_payment'] ?>" width="150" class="rounded" /></td>
+                                                <td>
+                                                    <?php if($u['booking_status'] == 'pending'){ ?>
+                                                        <span class="badge bg-success"><?= $u['booking_status'] ?></span> <br> 
+                                                        <a href="<?= base_url('admin/booking/'.$u['booking_id'].'/17/ongoing') ?>"><span class="badge bg-secondary">ongoing</span></a> <br> 
+                                                        <a href="<?= base_url('admin/booking/'.$u['booking_id'].'/17done') ?>#"><span class="badge bg-secondary">done</span></a>
+                                                    <?php } else if($u['booking_status'] == 'ongoing'){ ?>
+                                                        <a href="<?= base_url('admin/booking/'.$u['booking_id'].'/17/pending') ?>"> <span class="badge bg-secondary">Pending</span> </a> <br>
+                                                        <span class="badge bg-success"><?= $u['booking_status'] ?></span> <br> 
+                                                        <a href="<?= base_url('admin/booking/'.$u['booking_id'].'/17/done') ?>"><span class="badge bg-secondary">done</span></a>
+                                                    <?php } else if($u['booking_status'] == 'done'){ ?>
+                                                        <a href="<?= base_url('admin/booking/'.$u['booking_id'].'/17/pending') ?>"> <span class="badge bg-secondary">pending</span> </a> <br> 
+                                                        <a href="<?= base_url('admin/booking/'.$u['booking_id'].'/17/ongoing') ?>"><span class="badge bg-secondary">ongoing</span></a> <br>
+                                                        <span class="badge bg-success"><?= $u['booking_status'] ?></span>
+                                                    <?php } ?>
+                                                </td>
                                                 <td>
                                                   <a href="<?= base_url('admin/booking/edit/'.$u['booking_id']) ?>" class="btn btn-info">Ubah</a>
                                                   <a href="<?= base_url('admin/booking/delete/'.$u['booking_id']) ?>" class="btn btn-danger">Hapus</a>
