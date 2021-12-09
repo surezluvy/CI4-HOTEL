@@ -38,6 +38,7 @@
                                                 <th>Harga</th>
                                                 <th>Deskripsi</th>
                                                 <th>Fasilitas</th>
+                                                <th>Thumbnail</th>
                                                 <th>Gambar</th>
                                                 <th>Aksi</th>
                                             </tr>
@@ -53,6 +54,7 @@
                                                 <td><?= $u['item_price'] ?></td>
                                                 <td><?= $u['item_desc'] ?></td>
                                                 <td><?= $u['item_facility'] ?></td>
+                                                <td><img src="<?= base_url('assets/images/'.$u['item_thumbnail']) ?>" alt="<?= $u['item_thumbnail'] ?>" width="150" class="rounded" /></td>
                                                 <td><a href="<?= base_url('admin/image/'.$u['item_id']) ?>" class="btn btn-primary">Lihat</a></td>
                                                 <td>
                                                   <a href="<?= base_url('admin/hotel/edit/'.$u['item_id']) ?>" class="btn btn-info">Ubah</a>

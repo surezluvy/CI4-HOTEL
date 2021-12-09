@@ -8,10 +8,17 @@ class Image extends Controller
 {
     public function add($id)
     {   
-        $model = new ImageModel;
-        $data['image'] = $model->get($id);
-        $data['id'] = $id;
-        echo view('admin/image/add', $data);
+        if(isset($_SESSION['logged_in'])){
+            $model = new ImageModel;
+            $data['image'] = $model->get($id);
+            $data['id'] = $id;
+            echo view('admin/image/add', $data);
+        } else{
+            echo '<script>
+                    alert("Harap login dahulu.");
+                    window.location="'.base_url('/admin/login').'"
+                </script>';
+        }
     }
 
     public function addProcess()

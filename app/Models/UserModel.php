@@ -16,6 +16,12 @@ class UserModel extends Model
         }   
     }
 
+    public function getByEmail($email)
+    {
+        return $this->Where(['email' => $email])->first();
+    }
+
+
     public function add($data)
     {
         $builder = $this->db->table('user');

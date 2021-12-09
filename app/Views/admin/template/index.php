@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>HUD | Table Plugins</title>
+    <title>Hotel | Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -62,10 +62,10 @@
                         <div class="menu-img online">
                             <img src="<?= base_url('admin_assets/img/user/profile.jpg') ?>" height="60px" />
                         </div>
-                        <div class="menu-text d-sm-block d-none"><span class="__cf_email__" data-cfemail="c1b4b2a4b3afa0aca481a0a2a2aeb4afb5efa2aeac">[email&#160;protected]</span></div>
+                        <div class="menu-text d-sm-block d-none"><span class="__cf_email__" data-cfemail="c1b4b2a4b3afa0aca481a0a2a2aeb4afb5efa2aeac"><?= $_SESSION['email'] ?></span></div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">
-                        <a class="dropdown-item d-flex align-items-center" href="#">LOGOUT <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
+                        <a href="<?= base_url('admin/logout') ?>" class="dropdown-item d-flex align-items-center" href="#">LOGOUT <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
                     </div>
                 </div>
             </div>

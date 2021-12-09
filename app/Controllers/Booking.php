@@ -16,7 +16,14 @@ class Booking extends Controller
         $data['hotel'] = $model2->get();
         $data['user'] = $model3->get('user');
 
-        echo view('admin/booking/add', $data);
+        if(isset($_SESSION['logged_in'])){
+            echo view('admin/booking/add', $data);
+        } else{
+            echo '<script>
+                    alert("Harap login dahulu.");
+                    window.location="'.base_url('/admin/login').'"
+                </script>';
+        }
     }
 
     public function addProcess()
@@ -60,18 +67,25 @@ class Booking extends Controller
         $model2 = new HotelModel;
         $model3 = new UserModel;
         $get = $model->get($id)->getRow();
-        if(isset($get)){
-            $data['book'] = $get;
-            // print_r($data['book']->item_id);
-            $data['hotel'] = $model2->get($data['book']->item_id);
-            $data['hotels'] = $model2->get();
-            $data['user'] = $model3->get('user');
-            $data['users'] = $model3->get('user');
-            echo view('admin/booking/edit', $data);
-        }else{
+        if(isset($_SESSION['logged_in'])){
+            if(isset($get)){
+                $data['book'] = $get;
+                // print_r($data['book']->item_id);
+                $data['hotel'] = $model2->get($data['book']->item_id);
+                $data['hotels'] = $model2->get();
+                $data['user'] = $model3->get('user');
+                $data['users'] = $model3->get('user');
+                echo view('admin/booking/edit', $data);
+            }else{
+                echo '<script>
+                        alert("ID '.$id.' Tidak ditemukan");
+                        window.location="'.base_url('admin/booking').'"
+                    </script>';
+            }
+        } else{
             echo '<script>
-                    alert("ID '.$id.' Tidak ditemukan");
-                    window.location="'.base_url('admin/booking').'"
+                    alert("Harap login dahulu.");
+                    window.location="'.base_url('/admin/login').'"
                 </script>';
         }
     }

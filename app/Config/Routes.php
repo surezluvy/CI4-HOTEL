@@ -33,9 +33,21 @@ $routes->setAutoRoute(true);
 // $routes->get('/', 'Admin::index');
 // $routes->get('/admin', 'Admin::index');
 $routes->group('/', function ($routes) {
-	// $routes->get('customer/add', 'User::add/user');
+	$routes->get('detail/(:num)', 'Home::detail/$1');
+	$routes->get('item/(:any)', 'Home::hotel/$1');
+	$routes->add('book/(:num)', 'Home::book/$1');
+	$routes->add('book/process', 'Home::bookProcess');
+	$routes->get('book/done/(:num)', 'Home::bookDone/$1');
+	$routes->add('user/register', 'Home::registerProcess');
+	$routes->add('user/login', 'Home::loginProcess');
+	$routes->add('user/logout', 'Home::logoutProcess');
 });
 $routes->group('admin', function ($routes) {
+	// Login
+	$routes->get('login', 'Admin::login');
+	$routes->add('loginProcess', 'Admin::loginProcess');
+	$routes->add('logout', 'Admin::logoutProcess');
+
 	// Customer
 	$routes->get('customer/add', 'User::add/user');
 	$routes->add('customer/addProcess', 'User::addProcess/user');

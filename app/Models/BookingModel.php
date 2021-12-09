@@ -20,6 +20,14 @@ class BookingModel extends Model
             return $this->db->table('booking')->getWhere(['booking.booking_id' => $id]);
         }   
     }
+
+    public function latest($id)
+    {
+        return $this->db->table('booking')
+                            ->join('item', 'booking.item_id=item.item_id')
+                            ->join('user', 'booking.user_id=user.user_id')
+                            ->getWhere(['booking.booking_id' => $id]);
+    }
     
     public function add($data)
     {

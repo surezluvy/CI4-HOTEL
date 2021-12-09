@@ -7,11 +7,18 @@ class User extends Controller
 {
     public function add($role)
     {   
-        if($role == 'user'){
-            echo view('admin/customer/add');
-        } else if($role == 'admin'){
-            echo view('admin/admin/add');
-        } 
+        if(isset($_SESSION['logged_in'])){
+            if($role == 'user'){
+                echo view('admin/customer/add');
+            } else if($role == 'admin'){
+                echo view('admin/admin/add');
+            } 
+        } else{
+            echo '<script>
+                    alert("Harap login dahulu.");
+                    window.location="'.base_url('/admin/login').'"
+                </script>';
+        }
     }
 
     public function addProcess($role)
@@ -44,17 +51,24 @@ class User extends Controller
     {
         $model = new UserModel;
         $get = $model->get($role, $id)->getRow();
-        if(isset($get)){
-            $data['user'] = $get;
-            if($role == 'user'){
-                echo view('admin/customer/edit', $data);
-            } else if($role == 'admin'){
-                echo view('admin/admin/edit', $data);
+        if(isset($_SESSION['logged_in'])){
+            if(isset($get)){
+                $data['user'] = $get;
+                if($role == 'user'){
+                    echo view('admin/customer/edit', $data);
+                } else if($role == 'admin'){
+                    echo view('admin/admin/edit', $data);
+                }
+            }else{
+                echo '<script>
+                        alert("ID '.$id.' Tidak ditemukan");
+                        window.location="'.base_url('admin/').'"
+                    </script>';
             }
-        }else{
+        } else{
             echo '<script>
-                    alert("ID '.$id.' Tidak ditemukan");
-                    window.location="'.base_url('admin/').'"
+                    alert("Harap login dahulu.");
+                    window.location="'.base_url('/admin/login').'"
                 </script>';
         }
     }

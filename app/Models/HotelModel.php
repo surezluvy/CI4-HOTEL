@@ -16,6 +16,15 @@ class HotelModel extends Model
         }   
     }
 
+    public function getHome($type = false)
+    {
+        if($type === false){
+            return $this->limit(4)->get();
+        }else{
+            return $this->where('item_type', $type)->get();
+        }   
+    }
+
     public function add($data)
     {
         $builder = $this->db->table($this->table);

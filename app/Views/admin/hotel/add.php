@@ -24,7 +24,7 @@
                                 <div id="formControls" class="mb-5">
                                     <div class="card">
                                         <div class="card-body pb-2">
-                                            <form method="post" action="<?= base_url('admin/hotel/addProcess') ?>">
+                                            <form method="post" action="<?= base_url('admin/hotel/addProcess') ?>" enctype="multipart/form-data">
                                                 <div class="row">
                                                     <div class="col-xl-6">
                                                         <div class="form-group mb-3">
@@ -63,6 +63,12 @@
                                                         <div class="form-group mb-3">
                                                             <label class="form-label" for="exampleFormControlTextarea1">Fasilitas</label>
                                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="item_facility" placeholder="Masukan fasilitas" required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-12">
+                                                        <div class="form-group mb-3">
+                                                            <label class="form-label" for="exampleFormControlFile1">Masukan gambar</label>
+                                                            <input type="file" name="item_thumbnail"  class="form-control" id="exampleFormControlFile1" />
                                                         </div>
                                                     </div>
                                                 </div><br>
